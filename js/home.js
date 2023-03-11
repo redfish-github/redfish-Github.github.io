@@ -1,0 +1,10 @@
+function check()
+    {
+	    var x=document.getElementById("d").value;
+	    if(x=="计算器"){
+		    location.replace("https://redfish-github.github.io/html/计算器.html");
+        }
+        if(x=="时间"){
+            location.replace("https://redfish-github.github.io/html/时间.html");
+	    }
+    }
