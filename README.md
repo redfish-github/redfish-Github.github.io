@@ -1,4 +1,2 @@
-# redfish-Github.github.io
-一个托管在github上的web  
-
+一个托管在github上的静态网站
 web:https://redfish-github.github.io
