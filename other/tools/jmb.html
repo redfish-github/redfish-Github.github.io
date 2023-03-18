@@ -1,0 +1,10 @@
+<html>
+    <script src="https://redfish-github.github.io/other/js/jm.js"></script>
+    <script>
+        var aseKey =prompt("密钥(必须是8/16/32位)");
+        var message =prompt("内容");
+        var decrypt = CryptoJS.AES.decrypt(encrypt, CryptoJS.enc.Utf8.parse(aseKey), {mode: CryptoJS.mode.ECB,padding: CryptoJS.pad.Pkcs7}).toString(CryptoJS.enc.Utf8);
+        alert(decrypt);
+    </script>
+    <a href="..">返回</a>
+</html>
