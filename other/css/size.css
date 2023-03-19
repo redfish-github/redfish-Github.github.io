@@ -3,4 +3,6 @@
 }
 table{
     font-size: 10px;
+    border: 5;
+    align:"center";
 }
