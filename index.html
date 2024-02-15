@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>员工属性点计算器</title>
+</head>
+<body>
+    <h1>员工属性点计算器</h1>
+    <label for="currentPoints">当前属性点：</label>
+    <input type="text" id="currentPoints"><br><br>
+
+    <label for="beforeHP">工作前生命值：</label>
+    <input type="text" id="beforeHP"><br><br>
+
+    <label for="afterHP">工作后生命值：</label>
+    <input type="text" id="afterHP"><br><br>
+
+    <label for="beforeSP">工作前精神值：</label>
+    <input type="text" id="beforeSP"><br><br>
+
+    <label for="afterSP">工作后精神值：</label>
+    <input type="text" id="afterSP"><br><br>
+
+    <label for="result">结果：</label>
+    <span id="result"></span><br><br>
+
+    <button onclick="calculate()">计算加成</button>
+
+    <script>
+        function calculate() {
+            var currentPoints = parseInt(document.getElementById('currentPoints').value);
+            var beforeHP = parseInt(document.getElementById('beforeHP').value);
+            var afterHP = parseInt(document.getElementById('afterHP').value);
+            var beforeSP = parseInt(document.getElementById('beforeSP').value);
+            var afterSP = parseInt(document.getElementById('afterSP').value);
+
+            
+
+            var result = currentPoints
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
